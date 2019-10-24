@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Ball So Herd</title>
+    <link>http://ballsoherd.com/posts/</link>
+    <description>Recent content in Posts on Ball So Herd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Oct 2019 22:31:07 -0400</lastBuildDate>
+    
+	<atom:link href="http://ballsoherd.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Boise State</title>
+      <link>http://ballsoherd.com/posts/boise/</link>
+      <pubDate>Wed, 16 Oct 2019 22:31:07 -0400</pubDate>
+      
+      <guid>http://ballsoherd.com/posts/boise/</guid>
+      <description>A few hours before gametime, I made the same trek on foot from the night before into downtown.
+The Game The climb up to my seat in the southeast corner of Albertson&amp;rsquo;s Stadium was steeper and more tiring than one would expect at such a relatively small venue. While the crowd was respectable, Boise fans clearly weren&amp;rsquo;t out in full force for a Friday night game against a team they expected to handle.</description>
+    </item>
+    
+  </channel>
+</rss>

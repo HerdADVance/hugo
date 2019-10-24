@@ -1,0 +1,5 @@
+baseURL = "http://ballsoherd.com"
+languageCode = "en-us"
+title = "Ball So Herd"
+theme = "ananke"
+
