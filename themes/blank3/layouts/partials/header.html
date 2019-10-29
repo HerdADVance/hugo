@@ -1,0 +1,39 @@
+<!--header>
+	<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+	{{ with .Site.Menus.main }}
+	<nav>
+		<ul>
+			{{ range . }}
+			<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+			{{ end }}
+		</ul>
+	</nav>
+	{{ end }}
+</header-->
+
+
+<article class="home-feature cover flex rel" style="background-image:url(/images/denver-golf.jpg);">
+	{{ range first 1 (where .Site.RegularPages "Section" "in" (slice "posts")) }}
+		<a href="{{ .Permalink }}">
+			<div class="home-feature-text on-topper centered center rel">
+				<h1 class="white-text no-mar">{{ .Title }}</h1>
+			</div>
+			<div class="overlay"></div>
+		</a>
+	{{ end }}
+</article>
+<header class="header wrap-bg ter row no-pad-y flex" id="welcome">
+	<div class="col-4">
+		<h1 class="white-text no-mar">Ball So Herd</h1>
+	</div>
+	<div class="col-8">
+		<nav class="nav nav-inline nav-inline-right">
+			<ul>
+				<li><a href="">About</a></li>
+				<li><a href="">Portfolio</a></li>
+				<li><a href="">Resume</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
