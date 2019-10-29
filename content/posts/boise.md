@@ -1,4 +1,5 @@
 ---
+type: "post"
 title: "Boise State"
 date: 2019-10-16T22:31:07-04:00
 draft: false
