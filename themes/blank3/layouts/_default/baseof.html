@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
 <head>
 	<meta charset="UTF-8">
@@ -8,7 +8,7 @@
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 
-	<link href="https://fonts.googleapis.com/css?family=Charm:400,700|EB+Garamond:400,400i,700|Fjalla+One|Open+Sans+Condensed:300,700|Open+Sans:300,400,700|Oswald:300,400,700|Prompt:300,400,400i,700|Roboto+Slab:300,400,700|Slabo+27px|Quicksand:300,400,500,700|Exo+2:100,300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="{{ "css/normalize.css" | relURL }}">
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
@@ -20,9 +20,12 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 </head>
-<body>
+
+{{ $cat := .Param "cat"}}
+<body{{if eq $cat "post"}} class="is-article"{{end}}>
 	{{ partial "header" . }}
 	{{ block "main" . }}{{ end }}
 	{{ partial "footer" . }}
+
 </body>
 </html>

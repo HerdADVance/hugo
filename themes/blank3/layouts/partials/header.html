@@ -11,29 +11,42 @@
 	{{ end }}
 </header-->
 
+{{ $cat := .Param "cat"}}
+{{if eq $cat "post"}}
 
-<article class="home-feature cover flex rel" style="background-image:url(/images/denver-golf.jpg);">
-	{{ range first 1 (where .Site.RegularPages "Section" "in" (slice "posts")) }}
-		<a href="{{ .Permalink }}">
-			<div class="home-feature-text on-topper centered center rel">
-				<h1 class="white-text no-mar">{{ .Title }}</h1>
+	<div class="article-image" style="background-image:url(/images/boise-night.jpg);"></div>
+	<div class="parallax">
+
+	{{ partial "nav" .}}
+
+	<article class="article">
+				
+		<header class="article-header wrap-bg flex">
+			<div class="article-header-text">
+				<h1 class="article-header-title">Football Field Trip: Marshall @ Boise State</h1>
+				<div class="article-header-byline">
+					<strong class="article-header-author">Alex Vance</strong><br/>
+					<time datetime="2019-09-06" class="article-header-date">September 6, 2019</time>
+					<!--span class="article-category travel">Travel</span-->
+				</div>
 			</div>
-			<div class="overlay"></div>
-		</a>
-	{{ end }}
-</article>
-<header class="header wrap-bg ter row no-pad-y flex" id="welcome">
-	<div class="col-4">
-		<h1 class="white-text no-mar">Ball So Herd</h1>
-	</div>
-	<div class="col-8">
-		<nav class="nav nav-inline nav-inline-right">
-			<ul>
-				<li><a href="">About</a></li>
-				<li><a href="">Portfolio</a></li>
-				<li><a href="">Resume</a></li>
-				<li><a href="">Contact</a></li>
-			</ul>
-		</nav>
-	</div>
-</header>
+		</header>
+
+
+{{ else }}
+
+	{{ partial "nav" .}}
+
+	<article class="home-feature cover flex rel" style="background-image:url(/images/denver-golf.jpg);">
+		{{ range first 1 (where .Site.RegularPages "Section" "in" (slice "posts")) }}
+			<a href="{{ .Permalink }}">
+				<div class="home-feature-text on-topper centered center rel">
+					<h1 class="white-text no-mar">{{ .Title }}</h1>
+				</div>
+	 			<div class="overlay"></div>
+			</a>
+		{{ end }}
+	</article>
+
+
+{{ end }}
