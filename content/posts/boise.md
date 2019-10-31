@@ -3,6 +3,7 @@ cat: "post"
 title: "Boise State"
 date: 2019-10-16T22:31:07-04:00
 draft: false
+image: "boise-night.jpg"
 ---
 
 A few hours before gametime, I made the same trek on foot from the night before into downtown. 

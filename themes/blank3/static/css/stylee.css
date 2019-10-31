@@ -8,11 +8,10 @@
   outline: none;
 }
 body {
-  background: purple;
   color: #6B6B6B;
   display: flex;
   flex-direction: column;
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Oxygen', sans-serif;
   font-size: 16px;
   min-height: 100vh;
 }
@@ -438,16 +437,22 @@ article a{
   background: rgba(95, 173, 114, 0.65);
   bottom: -8vh;
   height: 8vh;
-  margin-top: -8vh;
-  position: relative;
+  position: absolute;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 .header.sticky{
   background: rgba(95, 173, 114, 0.95);
   margin-top: 0;
   position: fixed;
   top: 0;
+}
+.is-article .header{
+  background: rgba(95, 173, 114, 0.85);
+  position: relative;
+}
+.is-article .header.sticky{
+  position: fixed;
 }
 .logo{
   font-size: 1.25em;
@@ -473,11 +478,11 @@ article a{
 
 /* ----- HOME FEATURE ----- */
 .home-feature {
-  background-position-y: 40%;
+  background-position-y: 0%;
   height: 100vh;
 }
 .home-feature .overlay{
-  background-image: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0, 0.6) 80%, rgba(0,0,0,1) 100%);
+  background: rgba(0,0,0,0.6)
 }
 .home-feature-text{
   margin-top: -4vh;
@@ -596,11 +601,10 @@ article a{
 /*----- ARTICLE HEADER -----*/
 .article-image{
   align-items: center;
-  background-position: center;
+  background-position-y: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  /*box-shadow: 0 5px 3px #EEE*/;
-  display: flex;
+  display: none;
   height: 100vh;
   justify-content: center;
   position: fixed;
@@ -613,18 +617,19 @@ article a{
   z-index: 2;
 }
 .article-header{
-  background: rgba(255,255,255,0.7);
+  background: rgba(0,0,0,0.925);
   clear: both;
-  height: 25vh;
   justify-content: center;
   margin: 0;
+  padding-bottom: 3em;
+  padding-top: 3em;
   text-align: center;
 }
 .article-header-text{
   width: 100%;
 }
 .article-header-title{
-  color: #000;
+  color: #FFF;
   font-size: 1.75em;
   font-weight: 400;
   margin: 0;
@@ -637,7 +642,6 @@ article a{
   display: block;
   font-size: 0.95em;
   margin-top: 0.75em;
-  overflow: auto;
 }
 
 .article-header-date{
@@ -709,7 +713,6 @@ article a{
 /* ----- AUTHOR FEATURE ----- */
 .author-feature{
   background: linear-gradient(to left top, rgba(59, 58, 80,0.5) 0%,rgba(59, 58, 80,0.8) 50%,rgba(59, 58, 80,1) 100%);
-  background: linear-gradient(to left top, rgba(95, 173, 114,1) 0%, rgba(59, 58, 80,1) 100%);
   background: #2A293E;
   padding-bottom: 3em;
   padding-top: 3em;

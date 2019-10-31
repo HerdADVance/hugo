@@ -1,11 +1,15 @@
 {{ define "main" }}
-	<!--main>
-		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-		{{ range $paginator.Pages }}
-			{{ .Render "summary" }}
-		{{ end }}
-		{{ partial "pagination.html" . }}
-	</main-->
+
+<article class="home-feature cover flex rel" style="background-image:url(/images/boise-night.jpg);">
+	{{ range first 1 (where .Site.RegularPages "Section" "in" (slice "posts")) }}
+		<a href="{{ .Permalink }}">
+			<div class="home-feature-text on-topper centered center rel">
+				<h1 class="white-text no-mar">{{ .Title }}</h1>
+			</div>
+ 			<div class="overlay"></div>
+		</a>
+	{{ end }}
+</article>
 
 <main class="main-home">
 

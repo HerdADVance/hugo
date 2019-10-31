@@ -3,4 +3,9 @@
 	<p class="centered">But seriously, why is this even here? Who's going to steal this?</p>
 </footer>
 
+{{ $cat := .Param "cat"}}
+{{if eq $cat "post"}}
+</div> <!--end parallax-->
+{{ end }}
+
 <script src="{{ "js/script.js" | relURL }}"></script>

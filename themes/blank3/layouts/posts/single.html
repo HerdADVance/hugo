@@ -1,3 +1,52 @@
 {{ define "main" }}
-CCC
+<article class="article">
+				
+	<header class="article-header wrap-bg flex">
+		<div class="article-header-text">
+			<h1 class="article-header-title">Football Field Trip: Marshall @ Boise State</h1>
+			<div class="article-header-byline">
+				<strong class="article-header-author">Alex Vance</strong><br/>
+				<time datetime="2019-09-06" class="article-header-date">September 6, 2019</time>
+				<!--span class="article-category travel">Travel</span-->
+			</div>
+		</div>
+	</header>
+
+	<main class="wrap-bg">
+		{{- .Content -}}
+	</main>
+
+	<footer class="article-footer">
+		<div class="author-feature wrap-bg">
+			<img src="/assets/images/alex-nibbler.jpg">
+			<h1><span>Alex</span><span>Vance</span></h1>
+			<h2>Web Developer</h2>
+		</div>
+	</footer>
+
+</article>
+
+<section class="wrap-pad related-articles">
+	<h1 class="section-title white-text">Related Articles</h1>
+	<div class="related-articles-wrap">
+		<div class="related-article">
+			<a href="/article.php">
+				<div class="related-article-image" style="background-image:url(/images/siesta-key-sunset.jpg);"></div>
+				<h2 class="related-article-title">Not Good For Bubbers</h2>
+			</a>
+		</div>
+		<div class="related-article">
+			<a href="/article.php">
+				<div class="related-article-image" style="background-image:url(/images/vesuvius-2.jpg);"></div>
+				<h2 class="related-article-title">Surprisingly, No Ohioans Have Driven into this Lake</h2>
+			</a>
+		</div>
+		<div class="related-article">
+			<a href="/article.php">
+				<div class="related-article-image" style="background-image:url(/images/winston-salem-snow.jpg);"></div>
+				<h2 class="related-article-title">What the hell? Why is it snowing in North Carolina in early December?</h2>
+			</a>
+		</div>
+	</div>
+</section>
 {{ end }}

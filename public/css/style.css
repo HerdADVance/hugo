@@ -457,6 +457,9 @@ article a{
 .logo:hover{
   text-decoration: none;
 }
+.header a{
+  color: white;
+}
 
 /* ----- WELCOME ----- */
 .welcome{
