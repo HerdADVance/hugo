@@ -9,9 +9,17 @@
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 
 	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Prociono|Vollkorn&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="{{ "css/normalize.css" | relURL }}">
 	<link rel="stylesheet" href="{{ "css/stylee.css" | relURL }}">
+	<link rel="stylesheet" href="{{ "css/mobile.css" | relURL }}">
+
+	<meta property="og:title" content="Blog Title" />
+	<meta property="og:image" content="Image Link"/>
+	<meta property="og:site_name" content="Blog Title" />
+	<meta property="og:url" content="URL link" />
+	<meta property="og:description" content="Description" />
 
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}

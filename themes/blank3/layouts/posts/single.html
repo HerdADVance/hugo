@@ -1,26 +1,32 @@
 {{ define "main" }}
+
 <article class="article">
-				
+			
 	<header class="article-header wrap-bg flex">
 		<div class="article-header-text">
 			<h1 class="article-header-title">Football Field Trip: Marshall @ Boise State</h1>
 			<div class="article-header-byline">
-				<strong class="article-header-author">Alex Vance</strong><br/>
+				<strong class="article-header-author">Alex Vance</strong> | 
 				<time datetime="2019-09-06" class="article-header-date">September 6, 2019</time>
 				<!--span class="article-category travel">Travel</span-->
 			</div>
 		</div>
 	</header>
-
+	
 	<main class="wrap-bg">
-		{{- .Content -}}
+		<div class="article-main-content">
+			{{- .Content -}}
+		</div>
 	</main>
 
 	<footer class="article-footer">
 		<div class="author-feature wrap-bg">
-			<img src="/assets/images/alex-nibbler.jpg">
-			<h1><span>Alex</span><span>Vance</span></h1>
-			<h2>Web Developer</h2>
+			<img src="/images/alex-nibbler.jpg">
+			<div class="author-feature-info">
+				<h1>Alex Vance</h1>
+				<h2>Web Developer</h2>
+				<p>Alex Vance is a web developer from Huntington, West Virginia, with a good mix of knowledge in front-end and back-end technologies. He's an avid of Marshall Thundering Herd football and basketball (hence the name of this website). Kickball superstar but extremely mediocre golfer, chess player, and runner.</p>
+			</div>
 		</div>
 	</footer>
 
@@ -41,12 +47,12 @@
 				<h2 class="related-article-title">Surprisingly, No Ohioans Have Driven into this Lake</h2>
 			</a>
 		</div>
-		<div class="related-article">
+		<!--div class="related-article">
 			<a href="/article.php">
-				<div class="related-article-image" style="background-image:url(/images/winston-salem-snow.jpg);"></div>
+				<div class="related-article-image" style="background-image:url(/assets/images/winston-salem-snow.jpg);"></div>
 				<h2 class="related-article-title">What the hell? Why is it snowing in North Carolina in early December?</h2>
 			</a>
-		</div>
+		</div-->
 	</div>
 </section>
 {{ end }}
