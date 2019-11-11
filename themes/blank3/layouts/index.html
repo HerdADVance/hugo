@@ -1,13 +1,17 @@
 {{ define "main" }}
 
-<article class="home-feature cover flex rel" style="background-image:url(/images/denver-golf.jpg);">
-	<a href="/posts/boise">
-		<div class="home-feature-text on-topper centered center rel">
-			<h1 class="white-text no-mar">Here's a Pretty Fucking Awesome Golf Course in Golden, Colorado</h1>
-		</div>
-		<div class="overlay"></div>
-	</a>
-</article>
+{{ range first 1 (where .Site.RegularPages "Section" "in" (slice "posts")) }}
+
+	<article class="home-feature cover flex rel" style="background-image:url(/images/{{ .Param "image" }});">
+		<a class="block-link" href="{{ .Permalink }}">
+			<div class="home-feature-text on-topper centered center rel">
+				<h1 class="white-text no-mar">{{ .Title }}</h1>
+			</div>
+			<div class="overlay"></div>
+		</a>
+	</article>
+
+{{ end }}
 
 <main class="main-home">
 
