@@ -852,6 +852,11 @@ article a{
   margin-bottom: 0 !important;
 }
 
+.author-feature a{
+  color: white;
+  font-weight: bold;
+}
+
 
 /* ----- FOOTER ----- */
 .footer {
