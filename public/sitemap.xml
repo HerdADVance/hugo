@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://ballsoherd.com/an-absolute-beginners-introduction-to-static-site-generators-and-creating-a-blog-with-hugo/</loc>
+    <lastmod>2019-10-16T22:31:07-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://ballsoherd.com/</loc>
     <lastmod>2019-10-16T22:31:07-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://ballsoherd.com/posts/boise/</loc>
+    <loc>http://ballsoherd.com/boise-state/</loc>
     <lastmod>2019-10-16T22:31:07-04:00</lastmod>
   </url>
   

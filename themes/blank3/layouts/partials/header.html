@@ -14,7 +14,7 @@
 {{ $cat := .Param "cat"}}
 {{if eq $cat "post"}}
 
-	<div class="article-image" style="background-image:url(/images/{{.Param "image"}});"></div>
+	<div class="article-image" style="background-image:url(/images/{{ .Params.image }});"></div>
 	<div class="parallax">
 
 {{ end }}

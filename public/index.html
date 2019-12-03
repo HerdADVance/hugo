@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-us">
 <head>
 	<meta name="generator" content="Hugo 0.58.3" />
@@ -10,9 +10,17 @@
 	
 
 	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Prociono|Vollkorn&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="/css/normalize.css">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/stylee.css">
+	<link rel="stylesheet" href="/css/mobile.css">
+
+	<meta property="og:title" content="Blog Title" />
+	<meta property="og:image" content="Image Link"/>
+	<meta property="og:site_name" content="Blog Title" />
+	<meta property="og:url" content="URL link" />
+	<meta property="og:description" content="Description" />
 
 	<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Ball So Herd">
 
@@ -27,18 +35,23 @@
 
 
 
-<header class="header wrap-bg ter row no-pad-y flex" id="welcome">
+<header class="header wrap-bg ter no-pad-y flex" id="welcome">
 	<div class="col-4">
-		<h1 class="white-text no-mar"><a href="http://ballsoherd.com">Ball So Herd</a></h1>
+		<h1 class="white-text no-mar">Ball So Herd</h1>
 	</div>
 	<div class="col-8">
 		<nav class="nav nav-inline nav-inline-right">
-			<ul>
+			<ul class="desk">
 				<li><a href="">About</a></li>
 				<li><a href="">Portfolio</a></li>
 				<li><a href="">Resume</a></li>
 				<li><a href="">Contact</a></li>
 			</ul>
+			<div class="mob pull-right hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			<div>
 		</nav>
 	</div>
 </header>
@@ -48,16 +61,19 @@
 
 	
 
-<article class="home-feature cover flex rel" style="background-image:url(/images/boise-night.jpg);">
-	
-		<a href="http://ballsoherd.com/posts/boise/">
+
+
+	<article class="home-feature cover flex rel" style="background-image:url(/images/hugooo.png);">
+		<a class="block-link" href="http://ballsoherd.com/an-absolute-beginners-introduction-to-static-site-generators-and-creating-a-blog-with-hugo/">
 			<div class="home-feature-text on-topper centered center rel">
-				<h1 class="white-text no-mar">Boise State</h1>
+				<h1 class="white-text no-mar">An Absolute Beginner&#39;s Introduction to Static Site Generators and Creating a Blog with Hugo</h1>
+				<h2 style="padding-top: 20px;"> When first creating this blog, my initial instincts were to throw it into ExpressionEngine because that&amp;rsquo;s the content management system I&amp;rsquo;m most familiar with. That decision certainly would have worked just fine, but the more I thought about it, I realized that it might be overkill as a …</h2>
 			</div>
- 			<div class="overlay"></div>
+			<div class="overlay"></div>
 		</a>
-	
-</article>
+	</article>
+
+
 
 <main class="main-home">
 
@@ -65,80 +81,157 @@
 		<p>Welcome to BallSoHerd.com, the personal site and blog of Alex Vance &mdash; a professional web developer and kickball superstar from Huntington, West Virginia.</p>
 		<p>You'll find a lot of about web development here, but also a healthy mix of articles about sports (especially Marshall Thundering Herd football & basketball), travel, cats, gambling, and yes, maybe sometimes even politics.</p>
 	</div>
-	<div class="home-articles-con">
-		<article class="home-article row">
-			<a href="/article.php">
-				<div class="home-article-text row wrap-pad">
-					<div class="col-4">
-						<img src="/images/stonewall-lake.jpg">
-					</div>
-					<div class="col-8">
-						<h1>What in the Fuck is Going on in Huntington?</h1>
-						<div class="home-article-byline row">
-							<date class="home-article-date">December 27, 2018</date>
-							<ul class="home-article-tags">
-								<li>Sports</li>
-								<li>Travel</li>
-							</ul>
-						</div>
-						<div class="home-article-excerpt">
-							<p>Here's some text about the above article that's very accurate and insightful. You're gonna have to fucking click on this article after reading this preview. That's for goddamn sure. Aaaaand Here's some text about the above article that's very accurate and insightful. You're gonna have to fucking click on this article after reading this preview.</p>
-						</div>
-					</div>
-				</div>
-			</a>
-		</article>
-		<article class="home-article row">
-			<a href="/article.php">
-				<div class="home-article-text row wrap-pad">
-					<div class="col-4">
-						<img src="/images/stonewall-lake.jpg">
-					</div>
-					<div class="col-8">
-						<h1>What in the Fuck is Going on in Huntington?</h1>
-						<div class="home-article-byline row">
-							<date class="home-article-date">December 27, 2018</date>
-							<ul class="home-article-tags">
-								<li>Sports</li>
-								<li>Travel</li>
-							</ul>
-						</div>
-						<div class="home-article-excerpt">
-							<p>Here's some text about the above article that's very accurate and insightful. You're gonna have to fucking click on this article after reading this preview. That's for goddamn sure. Aaaaand Here's some text about the above article that's very accurate and insightful. You're gonna have to fucking click on this article after reading this preview.</p>
-						</div>
-					</div>
-				</div>
-			</a>
-		</article>
-		<article class="home-article row">
-			<a href="/article.php">
-				<div class="home-article-text row wrap-pad">
-					<div class="col-4">
-						<img src="/images/stonewall-lake.jpg">
-					</div>
-					<div class="col-8">
-						<h1>What in the Fuck is Going on in Huntington?</h1>
-						<div class="home-article-byline row">
-							<date class="home-article-date">December 27, 2018</date>
-							<ul class="home-article-tags">
-								<li>Sports</li>
-								<li>Travel</li>
-							</ul>
-						</div>
-						<div class="home-article-excerpt">
-							<p>Here's some text about the above article that's very accurate and insightful. You're gonna have to fucking click on this article after reading this preview. That's for goddamn sure. Aaaaand Here's some text about the above article that's very accurate and insightful. You're gonna have to fucking click on this article after reading this preview.</p>
-						</div>
-					</div>
-				</div>
-			</a>
-		</article>
+
+	<div class="home-showcases">
+		<div class="row">
+			<div class="home-showcase col-6" style="background-image:url(/images/boise-night.jpg);">
+				<a class="block-link" href="/posts/boise">
+					<h1>Football Field Trip: Marshall @ Boise State</h1>
+					<div class="overlay"></div>
+				</a>
+			</div>
+			<div class="home-showcase col-6" style="background-image:url(/images/denver-golf.jpg);">
+				<a class="block-link" href="/posts/boise">
+					<h1>Here's a Really Fucking Cool Golf Course in Golden, Coloradopoooo sdlfkjsdflkjdsdslj  kj</h1>
+					<div class="overlay"></div>
+				</a>
+			</div>
+		</div>
 	</div>
 
+	<div class="home-articles">
+
+		<h1 class="section-title">More Articles</h1>
+
+		<div class="home-articles-sort row">
+			<div class="col-6 home-articles-sort-sections">
+				
+			</div>
+			<div class="col-6 home-articles-sort-search">
+				<input class="centered upper" type="text" placeholder="Search Articles">
+			</div>
+		</div>
+
+		<article class="home-article row">
+			<a href="/posts/boise">
+				<div class="home-article-text row">
+					<div class="col-5">
+						<img src="/images/stonewall-lake.jpg">
+					</div>
+					<div class="col-7">
+						<h1>What in the Fuck is Going on in Huntington?</h1>
+						<div class="home-article-byline row">
+							<date class="home-article-date">December 27, 2018</date>
+							<ul class="home-article-tags">
+								
+							</ul>
+						</div>
+						<div class="home-article-excerpt">
+							<p>Here's some text about the above article that's very accurate and insightful. You're gonna have to fucking click on this article after reading this preview. That's for goddamn sure. Aaaaand Here's some text about the above article that's very accurate and insightful. You're gonna have to fucking click on this article after reading this preview.</p>
+						</div>
+					</div>
+				</div>
+			</a>
+		</article>
+		<article class="home-article row">
+			<a href="/posts/boise">
+				<div class="home-article-text row">
+					<div class="col-5">
+						<img src="/images/new-river-bridge.jpg">
+					</div>
+					<div class="col-7">
+						<h1>What in the Fuck is Going on in Huntington?</h1>
+						<div class="home-article-byline row">
+							<date class="home-article-date">December 27, 2018</date>
+							<ul class="home-article-tags">
+								<li>Sports</li>
+								<li>Travel</li>
+							</ul>
+						</div>
+						<div class="home-article-excerpt">
+							<p>Here's some text about the above article that's very accurate and insightful. You're gonna have to fucking click on this article after reading this preview. That's for goddamn sure. Aaaaand Here's some text about the above article that's very accurate and insightful. You're gonna have to fucking click on this article after reading this preview.</p>
+						</div>
+					</div>
+				</div>
+			</a>
+		</article>
+		<article class="home-article row">
+			<a href="/posts/boise">
+				<div class="home-article-text row">
+					<div class="col-5">
+						<img src="/images/wilmington-beach.jpg">
+					</div>
+					<div class="col-7">
+						<h1>What in the Fuck is Going on in Huntington?</h1>
+						<div class="home-article-byline row">
+							<date class="home-article-date">December 27, 2018</date>
+							<ul class="home-article-tags">
+								<li>Sports</li>
+								<li>Travel</li>
+							</ul>
+						</div>
+						<div class="home-article-excerpt">
+							<p>Here's some text about the above article that's very accurate and insightful. You're gonna have to fucking click on this article after reading this preview. That's for goddamn sure. Aaaaand Here's some text about the above article that's very accurate and insightful. You're gonna have to fucking click on this article after reading this preview.</p>
+						</div>
+					</div>
+				</div>
+			</a>
+		</article>
+		<article class="home-article row">
+			<a href="/posts/boise">
+				<div class="home-article-text row">
+					<div class="col-5">
+						<img src="/images/cincinnati-hotel.jpg">
+					</div>
+					<div class="col-7">
+						<h1>What in the Fuck is Going on in Huntington?</h1>
+						<div class="home-article-byline row">
+							<date class="home-article-date">December 27, 2018</date>
+							<ul class="home-article-tags">
+								<li>Sports</li>
+								<li>Travel</li>
+							</ul>
+						</div>
+						<div class="home-article-excerpt">
+							<p>Here's some text about the above article that's very accurate and insightful. You're gonna have to fucking click on this article after reading this preview. That's for goddamn sure. Aaaaand Here's some text about the above article that's very accurate and insightful. You're gonna have to fucking click on this article after reading this preview.</p>
+						</div>
+					</div>
+				</div>
+			</a>
+		</article>
+
+		<article class="home-article row">
+			<a href="/posts/boise">
+				<div class="home-article-text row">
+					<div class="col-5">
+						<img src="/images/siesta-key-sunset.jpg">
+					</div>
+					<div class="col-7">
+						<h1>What in the Fuck is Going on in Huntington?</h1>
+						<div class="home-article-byline row">
+							<date class="home-article-date">December 27, 2018</date>
+							<ul class="home-article-tags">
+								<li>Sports</li>
+								<li>Travel</li>
+							</ul>
+						</div>
+						<div class="home-article-excerpt">
+							<p>Here's some text about the above article that's very accurate and insightful. You're gonna have to fucking click on this article after reading this preview. That's for goddamn sure. Aaaaand Here's some text about the above article that's very accurate and insightful. You're gonna have to fucking click on this article after reading this preview.</p>
+						</div>
+					</div>
+				</div>
+			</a>
+		</article>
+
+	</div>
 	
-	
-	<div class="author-feature wrap-pad flex">
-		<h1><span>Alex</span><span>Vance</span></h1>
-		<h2>Web Developer</h2>
+	<div class="author-feature wrap-bg">
+		<img src="/images/alex-nibbler.jpg">
+		<div class="author-feature-info">
+			<h1>Alex Vance</h1>
+			<h2>Web Developer</h2>
+			<p>Welcome to BallSoHerd.com, the personal site and blog of Alex Vance &mdash; a professional web developer and kickball superstar from Huntington, West Virginia. You'll find a lot of about web development here, but also a healthy mix of articles about sports (especially Marshall Thundering Herd football & basketball), travel, cats, gambling, and yes, maybe sometimes even politics.</p>
+		</div>
 	</div>
 
 </main>

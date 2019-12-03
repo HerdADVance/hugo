@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>An Absolute Beginner&#39;s Introduction to Static Site Generators and Creating a Blog with Hugo</title>
+	
+	
+
+	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Prociono|Vollkorn&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/stylee.css">
+	<link rel="stylesheet" href="/css/mobile.css">
+
+	<meta property="og:title" content="Blog Title" />
+	<meta property="og:image" content="Image Link"/>
+	<meta property="og:site_name" content="Blog Title" />
+	<meta property="og:url" content="URL link" />
+	<meta property="og:description" content="Description" />
+
+	
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+
+
+<body class="is-article">
+	
+
+
+
+
+	<div class="article-image" style="background-image:url(/images/hugooo.png);"></div>
+	<div class="parallax">
+
+
+
+<header class="header wrap-bg ter no-pad-y flex" id="welcome">
+	<div class="col-4">
+		<h1 class="white-text no-mar">Ball So Herd</h1>
+	</div>
+	<div class="col-8">
+		<nav class="nav nav-inline nav-inline-right">
+			<ul class="desk">
+				<li><a href="">About</a></li>
+				<li><a href="">Portfolio</a></li>
+				<li><a href="">Resume</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+			<div class="mob pull-right hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			<div>
+		</nav>
+	</div>
+</header>
+	
+
+
+
+	
+
+<article class="article">
+			
+	<header class="article-header wrap-bg flex">
+		<div class="article-header-text">
+			<h1 class="article-header-title">An Absolute Beginner&#39;s Introduction to Static Site Generators and Creating a Blog with Hugo</h1>
+			<div class="article-header-byline">
+				<strong class="article-header-author">Alex Vance</strong> | 
+				<time datetime="2019-09-06" class="article-header-date">2019-10-16 22:31:07 -0400 EDT</time>
+				
+			</div>
+		</div>
+	</header>
+	
+	<main class="wrap-bg">
+		<div class="article-main-content">
+
+<p>When first creating this blog, my initial instincts were to throw it into <a href="https://expressionengine.com/" target="_BLANK">ExpressionEngine</a> because that&rsquo;s the content management system I&rsquo;m most familiar with. That decision certainly would have worked just fine, but the more I thought about it, I realized that it might be overkill as a developer to have my personal blog in a full-fledged CMS designed to be used by clients who don&rsquo;t know HTML.</p>
+
+<p>I&rsquo;d had some limited experience in the past with <a href="https://jekyllrb.com/" target="_BLANK"> Jekyll</a>, a static site generator (SSG) that seemed to be primarily targeted at developers making personal blogs. There&rsquo;s also nothing wrong that option, but it&rsquo;s built on Ruby and requires a Ruby environment so I really didn&rsquo;t wanna go down that route.</p>
+
+<p>So I decided to research which SSG would be best for me. <a href="https://www.sitepoint.com/static-site-generators/" target="_BLANK">Sitepoint</a> does a good job explaining the pros and cons of the more popular ones, but I eventually landed on <a href="https://gohugo.io/" target="_BLANK">Hugo</a>. I was drawn to Hugo because it&rsquo;s free, advertised as &ldquo;the world&rsquo;s fastest framework for building websites,&rdquo; and because I was already interested in learning <a href="https://golang.org/" target="_BLANK">Golang (Go)</a> which Hugo is built on.</p>
+
+<h2 id="why-use-a-static-site-generator">Why Use a Static Site Generator</h2>
+
+<p>The most obvious distinguishing feature of an SSG is that it doesn&rsquo;t use a database. While that would be a dealbreaker for certain types of sites, it&rsquo;s a benefit for text-based sites like a personal blog. Axing the database instantly means more speed and security for your site.</p>
+
+<p>Instead of relying on the database to dynamically fetch content, you run a build that converts all of your content (usually in Markdown files) into static folders and HTML files that you then push either into a git repository or directly to your site. It&rsquo;s a nice simple process that usually offers more flexibility and requires less hassle than dealing with a monolithic CMS.</p>
+
+<p>One potential drawback of an SSG is that the build process can take some time if you have a large site, but Hugo focuses on speed and can handle complex builds quickly. I was surprised to learn that more and more large websites are relying on SSG&rsquo;s. With the relative simplicity of the personal blog site we&rsquo;re talking about here, the speed of the build wouldn&rsquo;t really be an issue even using a slower SSG.</p>
+
+<p>Just as a point of clarification that initially confused me, static site generators are incredibly similar to flat file CMS&rsquo;s. Both don&rsquo;t use databases and work in the same sort of way, but the main difference is that a flat file CMS generally has a user admin interface similar to a more traditional CMS while an SSG usually relies on the command line. The more you know!</p>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>Now that we&rsquo;ve talked about what SSG&rsquo;s are and why we&rsquo;re using them, let&rsquo;s get down to actually learning how to start using Hugo.</p>
+
+<p>Although I mentioned that I was interested in learning Go, it should be known that little to no knowledge of the language is required to churn out a basic site with Hugo.</p>
+</div>
+	</main>
+
+	<footer class="article-footer">
+		<div class="author-feature wrap-bg">
+			<img src="/images/alex-nibbler.jpg">
+			<div class="author-feature-info">
+				<h1>Alex Vance</h1>
+				<h2>Web Developer</h2>
+				<p>Alex Vance is a web developer from Huntington, West Virginia, with a good mix of knowledge in front-end and back-end technologies. He's an avid of Marshall Thundering Herd football and basketball (hence the name of this website). Kickball superstar but extremely mediocre golfer, chess player, and runner.</p>
+			</div>
+		</div>
+	</footer>
+
+</article>
+
+<section class="wrap-pad related-articles">
+	<h1 class="section-title white-text">Related Articles</h1>
+	<div class="related-articles-wrap">
+		<div class="related-article">
+			<a href="/article.php">
+				<div class="related-article-image" style="background-image:url(/images/siesta-key-sunset.jpg);"></div>
+				<h2 class="related-article-title">Not Good For Bubbers</h2>
+			</a>
+		</div>
+		<div class="related-article">
+			<a href="/article.php">
+				<div class="related-article-image" style="background-image:url(/images/vesuvius-2.jpg);"></div>
+				<h2 class="related-article-title">Surprisingly, No Ohioans Have Driven into this Lake</h2>
+			</a>
+		</div>
+		
+	</div>
+</section>
+
+	<footer class="footer wrap-bg ter">
+	<p class="centered">&copy; Alex Vance 2019</p>
+	<p class="centered">But seriously, why is this even here? Who's going to steal this?</p>
+</footer>
+
+
+
+</div> 
+
+
+<script src="/js/script.js"></script>
+
+
+</body>
+</html>

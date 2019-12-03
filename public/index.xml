@@ -12,11 +12,21 @@
     
     
     <item>
-      <title>Boise State</title>
-      <link>http://ballsoherd.com/posts/boise/</link>
+      <title>An Absolute Beginner&#39;s Introduction to Static Site Generators and Creating a Blog with Hugo</title>
+      <link>http://ballsoherd.com/an-absolute-beginners-introduction-to-static-site-generators-and-creating-a-blog-with-hugo/</link>
       <pubDate>Wed, 16 Oct 2019 22:31:07 -0400</pubDate>
       
-      <guid>http://ballsoherd.com/posts/boise/</guid>
+      <guid>http://ballsoherd.com/an-absolute-beginners-introduction-to-static-site-generators-and-creating-a-blog-with-hugo/</guid>
+      <description>When first creating this blog, my initial instincts were to throw it into ExpressionEngine because that&amp;rsquo;s the content management system I&amp;rsquo;m most familiar with. That decision certainly would have worked just fine, but the more I thought about it, I realized that it might be overkill as a developer to have my personal blog in a full-fledged CMS designed to be used by clients who don&amp;rsquo;t know HTML.
+I&amp;rsquo;d had some limited experience in the past with Jekyll, a static site generator (SSG) that seemed to be primarily targeted at developers making personal blogs.</description>
+    </item>
+    
+    <item>
+      <title>Boise State</title>
+      <link>http://ballsoherd.com/boise-state/</link>
+      <pubDate>Wed, 16 Oct 2019 22:31:07 -0400</pubDate>
+      
+      <guid>http://ballsoherd.com/boise-state/</guid>
       <description>A few hours before gametime, I made the same trek on foot from the night before into downtown.
 The Game The climb up to my seat in the southeast corner of Albertson&amp;rsquo;s Stadium was steeper and more tiring than one would expect at such a relatively small venue. While the crowd was respectable, Boise fans clearly weren&amp;rsquo;t out in full force for a Friday night game against a team they expected to handle.</description>
     </item>

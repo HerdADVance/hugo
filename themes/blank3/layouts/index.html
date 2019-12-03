@@ -6,6 +6,7 @@
 		<a class="block-link" href="{{ .Permalink }}">
 			<div class="home-feature-text on-topper centered center rel">
 				<h1 class="white-text no-mar">{{ .Title }}</h1>
+				<h2 style="padding-top: 20px;">{{ .Content | plainify | truncate 300 }}</h2>
 			</div>
 			<div class="overlay"></div>
 		</a>

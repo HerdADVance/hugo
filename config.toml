@@ -2,4 +2,5 @@ baseURL = "http://ballsoherd.com"
 languageCode = "en-us"
 title = "Ball So Herd"
 theme = "blank3"
-
+[permalinks]
+	posts = "/:title/"
