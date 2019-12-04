@@ -12,11 +12,11 @@
 </header-->
 
 {{ $cat := .Param "cat"}}
+{{ $imageContain := .Param "imageContain"}}
+
 {{if eq $cat "post"}}
-
-	<div class="article-image" style="background-image:url(/images/{{ .Params.image }});"></div>
+	<div class="article-image" style="background-image:url(/images/{{ .Params.image }});{{if $imageContain}} background-size:contain;{{ end }}"></div>
 	<div class="parallax">
-
 {{ end }}
 
 {{ partial "nav" .}}

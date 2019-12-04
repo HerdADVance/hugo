@@ -3,7 +3,8 @@ cat: "post"
 title: "An Absolute Beginner's Introduction to Static Site Generators and Creating a Blog with Hugo"
 date: 2019-10-16T22:31:07-04:00
 draft: false
-image: "hugooo.png"
+image: "hugo.png"
+imageContain: true
 ---
 
 When first creating this blog, my initial instincts were to throw it into {{% tabLink "https://expressionengine.com/" "ExpressionEngine" %}} because that's the content management system I'm most familiar with. That decision certainly would have worked just fine, but the more I thought about it, I realized that it might be overkill as a developer to have my personal blog in a full-fledged CMS designed to be used by clients who don't know HTML.

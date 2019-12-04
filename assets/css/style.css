@@ -702,7 +702,7 @@ article a{
   align-items: center;
   background-position: 0;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: none;
   height: 100vh;
   justify-content: center;
