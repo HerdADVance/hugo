@@ -7,7 +7,7 @@
 			<h1 class="article-header-title">{{ .Title }}</h1>
 			<div class="article-header-byline">
 				<strong class="article-header-author">Alex Vance</strong> | 
-				<time datetime="2019-09-06" class="article-header-date">{{ .Date }}</time>
+				<time datetime="2019-09-06" class="article-header-date">{{ dateFormat "January 2, 2006" .Date }}</time>
 				<!--span class="article-category travel">Travel</span-->
 			</div>
 		</div>

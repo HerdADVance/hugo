@@ -2,7 +2,7 @@
 
 {{ range first 1 (where .Site.RegularPages "Section" "in" (slice "posts")) }}
 
-	<article class="home-feature cover flex rel" style="background-image:url(/images/{{ .Param "image" }});">
+	<article class="home-feature cover flex rel" style="background-image:url(/images/{{ .Params.image }});">
 		<a class="block-link" href="{{ .Permalink }}">
 			<div class="home-feature-text on-topper centered center rel">
 				<h1 class="white-text no-mar">{{ .Title }}</h1>

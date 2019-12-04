@@ -6,11 +6,11 @@ draft: false
 image: "hugooo.png"
 ---
 
-When first creating this blog, my initial instincts were to throw it into <a href="https://expressionengine.com/" target="_BLANK">ExpressionEngine</a> because that's the content management system I'm most familiar with. That decision certainly would have worked just fine, but the more I thought about it, I realized that it might be overkill as a developer to have my personal blog in a full-fledged CMS designed to be used by clients who don't know HTML.
+When first creating this blog, my initial instincts were to throw it into {{% tabLink "https://expressionengine.com/" "ExpressionEngine" %}} because that's the content management system I'm most familiar with. That decision certainly would have worked just fine, but the more I thought about it, I realized that it might be overkill as a developer to have my personal blog in a full-fledged CMS designed to be used by clients who don't know HTML.
 
-I'd had some limited experience in the past with <a href="https://jekyllrb.com/" target="_BLANK"> Jekyll</a>, a static site generator (SSG) that seemed to be primarily targeted at developers making personal blogs. There's also nothing wrong that option, but it's built on Ruby and requires a Ruby environment so I really didn't wanna go down that route.
+I'd had some limited experience in the past with {{% tabLink "https://jekyllrb.com/" "Jekyll" %}}, a static site generator (SSG) that seemed to be primarily targeted at developers making personal blogs. There's also nothing wrong that option, but it's built on Ruby and requires a Ruby environment so I really didn't wanna go down that route.
 
-So I decided to research which SSG would be best for me. <a href="https://www.sitepoint.com/static-site-generators/" target="_BLANK">Sitepoint</a> does a good job explaining the pros and cons of the more popular ones, but I eventually landed on <a href="https://gohugo.io/" target="_BLANK">Hugo</a>. I was drawn to Hugo because it's free, advertised as "the world's fastest framework for building websites," and because I was already interested in learning <a href="https://golang.org/" target="_BLANK">Golang (Go)</a> which Hugo is built on.
+So I decided to research which SSG would be best for me. {{% tabLink "https://www.sitepoint.com/static-site-generators/" "SitePoint" %}} does a good job explaining the pros and cons of the more popular ones, but I eventually landed on {{% tabLink "https://gohugo.io/" "Hugo" %}}. I was drawn to Hugo because it's free, advertised as "the world's fastest framework for building websites," and because I was already interested in learning {{% tabLink "https://golang.org/" "GoLang (Go)" %}} which Hugo is built on.
 
 ## Why Use a Static Site Generator
 
