@@ -26,6 +26,10 @@ Just as a point of clarification that initially confused me, static site generat
 
 ## Getting Started
 
-Now that we've talked about what SSG's are and why we're using them, let's get down to actually learning how to start using Hugo. 
+Now that we've talked about what SSG's are and why we're using them, let's get down to actually learning how to use Hugo.
+
+Installation is straightforward. If you're using Homebrew, you can simply type {{< cl >}}brew install hugo{{< /cl >}}. I'll leave you to {{% tabLink "https://gohugo.io/getting-started/installing/" "the official installation page" %}} if you need more help.
+
+Once you've got Hugo installed, it's just another short command line statement to create a new project: {{< cl >}}hugo new site blog{{< /cl >}} will setup all of the files in a new directory called blog. Following the convention of many other frameworks, "blog" can be named anything you wish in this case.
 
 Although I mentioned that I was interested in learning Go, it should be known that little to no knowledge of the language is required to churn out a basic site with Hugo.

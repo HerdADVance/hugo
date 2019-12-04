@@ -764,7 +764,7 @@ article a{
 }
 .article p, .article li{
   color: #333;
-  font-family: 'Crimson Text', sans-serif;
+  font-family: 'Crimson Text', serif;
   font-size: 1.5em;
   font-weight: 300;}
 .article ul{
@@ -777,6 +777,15 @@ article a{
 }
 .article img{
   max-width: 100%;
+}
+.article span.cl{
+  background: #EEE;
+  color: #333;
+  display: inline-block;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 0.75em;
+  margin-right: 2px;
+  padding: 2px 6px;
 }
 
 /* RELATED ARTICLES */
@@ -843,6 +852,11 @@ article a{
 
 .author-feature span{
   display: block;
+}
+
+.author-feature a{
+  color: white;
+  font-weight: bold;
 }
 
 .author-feature p{
