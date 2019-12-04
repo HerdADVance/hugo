@@ -2,11 +2,13 @@
 
 {{ range first 1 (where .Site.RegularPages "Section" "in" (slice "posts")) }}
 
-	<article class="home-feature cover flex rel" style="background-image:url(/images/{{ .Params.image }});">
+	{{ $imageContain := .Param "imageContain"}}
+
+	<article class="home-feature cover flex rel" style="background-image:url(/images/{{ .Params.image }});{{if $imageContain}} background-size:contain;{{ end }}">
 		<a class="block-link" href="{{ .Permalink }}">
 			<div class="home-feature-text on-topper centered center rel">
 				<h1 class="white-text no-mar">{{ .Title }}</h1>
-				<h2 style="padding-top: 20px;">{{ .Content | plainify | htmlUnescape | truncate 300 }}</h2>
+				<!--h2 style="padding-top: 20px;">{{ .Content | plainify | htmlUnescape | truncate 300 }}</h2-->
 			</div>
 			<div class="overlay"></div>
 		</a>
